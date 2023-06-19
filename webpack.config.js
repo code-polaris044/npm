@@ -42,7 +42,7 @@ module.exports = {
       },
       {
         // 対象となるファイルの拡張子
-        test: /\.(png|jpg)$/,
+        test: /\.(gif|png|jpg|eot|wof|woff|ttf|svg)$/,
         // 画像をBase64として取り込む
         type: "asset/inline",
       },
