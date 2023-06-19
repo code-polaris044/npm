@@ -26,3 +26,26 @@ let a = fetch(
   .catch((error) => {
     console.error(error);
   });
+
+let youtuber = {
+  list: {
+    business: {
+      youtuber: [
+        {
+          name: "菅原",
+          age: 20,
+          job1() {},
+        },
+        {
+          neme: "俊哉",
+          age: 37,
+          job2() {},
+        },
+      ],
+    },
+  },
+  plan() {},
+  uploadVideo() {},
+};
+
+console.log(youtuber.list.business.youtuber[0].age);

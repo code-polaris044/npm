@@ -3,11 +3,18 @@
 $IMAGE: '../img/';
 $ratio: math.div(3, 2);
 
-h1 {
-    color: blue;
+.title {
+    color: palegoldenrod;
+    text-align: center;
+    line-height: 1.6;
 }
 
-.img {
+#music {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.img__f {
     width: min(100% - 80px, 600px);
     height: auto;
     background: url("#{$IMAGE}a.png") no-repeat center center/cover;
@@ -15,10 +22,10 @@ h1 {
     margin: 0 auto 40px;
 }
 
-.test {
+.img__s {
     width: min(100% - 80px, 600px);
     height: auto;
     background: url("#{$IMAGE}b.jpg") no-repeat center center/cover;
     aspect-ratio: $ratio;
-    margin: 0 auto;
+    margin: 0 auto 40px
 }
