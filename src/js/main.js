@@ -8,9 +8,9 @@ let a = fetch(
     return response.json();
   })
   .then((response) => {
-    const data = response.data; // dataオブジェクトを取得
+    const data = response.data;
 
-    console.log(response); // { success: true, data: { ... } }
+    console.log(response);
     console.log("Name:", data.name);
     console.log("Age:", data.age);
     console.log("Note:", data.note);
@@ -49,3 +49,26 @@ let youtuber = {
 };
 
 console.log(youtuber.list.business.youtuber[0].age);
+
+// window.alert("アラート");
+
+let elements = document.getElementsByClassName("title");
+let b = Array.from(elements).forEach((element) => {
+  element.innerText = "Domを操作";
+});
+
+const unfollow = function () {
+  console.log("フォローを外しました");
+};
+
+const cancelTweet = function () {
+  console.log("ツイートをキャンセルしました");
+};
+
+function confirmed(fn) {
+  if (window.confirm("実行しますか?")) {
+    fn();
+  }
+}
+
+confirmed(cancelTweet);
