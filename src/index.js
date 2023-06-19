@@ -1,2 +1,2 @@
-import "./sass/style.scss";
-import "./main.js";
+import "./sass/index.scss";
+import "./js/main.js";
