@@ -16,12 +16,35 @@ module.exports = {
           "style-loader",
           {
             loader: "css-loader",
-            options: { url: false },
+            options: {
+              url: false,
+              sourceMap: true,
+            },
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              // PostCSS側でもソースマップを有効にする
+              // sourceMap: true,
+              postcssOptions: {
+                plugins: [
+                  // Autoprefixerを有効化
+                  // ベンダープレフィックスを自動付与する
+                  ["autoprefixer", { grid: true }],
+                ],
+              },
+            },
           },
           {
             loader: "sass-loader",
           },
         ],
+      },
+      {
+        // 対象となるファイルの拡張子
+        test: /\.(png|jpg)$/,
+        // 画像をBase64として取り込む
+        type: "asset/inline",
       },
     ],
   },
