@@ -17,21 +17,15 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              url: false,
-              sourceMap: true,
+              url: true,
+              importLoaders: 2,
             },
           },
           {
             loader: "postcss-loader",
             options: {
-              // PostCSS側でもソースマップを有効にする
-              // sourceMap: true,
               postcssOptions: {
-                plugins: [
-                  // Autoprefixerを有効化
-                  // ベンダープレフィックスを自動付与する
-                  ["autoprefixer", { grid: true }],
-                ],
+                plugins: [["autoprefixer", { grid: true }]],
               },
             },
           },
@@ -41,9 +35,7 @@ module.exports = {
         ],
       },
       {
-        // 対象となるファイルの拡張子
-        test: /\.(gif|png|jpg|eot|wof|woff|ttf|svg)$/,
-        // 画像をBase64として取り込む
+        test: /\.(gif|png|jpg|eot|woff|woff2|ttf|svg)$/,
         type: "asset/inline",
       },
     ],
