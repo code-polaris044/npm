@@ -29,3 +29,13 @@ $ratio: math.div(3, 2);
     aspect-ratio: $ratio;
     margin: 0 auto 40px
 }
+
+#lists {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#addBtn {
+    display: block;
+    margin: 0 auto;
+}
