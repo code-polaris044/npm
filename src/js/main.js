@@ -139,3 +139,7 @@ async function listUsers() {
 window.addEventListener("load", listUsers);
 
 button.addEventListener("click", listUsers);
+
+const test = "test";
+
+alert(test);
