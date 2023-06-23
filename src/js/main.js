@@ -235,9 +235,13 @@ button.addEventListener("click", listUsers);
 
 // 明示的な型変換
 
-console.log(Number("1"));
-console.log(Number("HEllo"));
-console.log(Number("0"));
-console.log(Number(true));
-console.log(String(true));
-console.log(typeof String(1));
+// console.log(Number("1"));
+// console.log(Number("HEllo"));
+// console.log(Number("0"));
+// console.log(Number(true));
+// console.log(String(true));
+// console.log(typeof String(1));
+
+// 暗黙的な型変換
+
+console.log(1 + "1");
