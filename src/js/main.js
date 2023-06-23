@@ -193,19 +193,34 @@ button.addEventListener("click", listUsers);
 //参照できなくなる
 
 //初期化時の宣言
-let person = {
-  hello() {
-    //省略記法
-    console.log("こんにちわ");
+// let person = {
+//   hello() {
+//     //省略記法
+//     console.log("こんにちわ");
+//   },
+// };
+
+//既存オブジェクトにメソッドを追加
+// person.sorry = function () {
+//   console.log("ごめん");
+// };
+
+// person.sorry();
+
+//メソッドの実行
+// person.hello();
+
+// シンボルの取得は、ブラケット記法のみ有効
+let mySymble1 = Symbol();
+let mySymble2 = Symbol();
+
+const obj = {
+  [mySymble1]: "値1",
+  [mySymble2]() {
+    console.log("hoge");
   },
 };
 
-//既存オブジェクトにメソッドを追加
-person.sorry = function () {
-  console.log("ごめん");
-};
+console.log(obj[mySymble1]);
 
-person.sorry();
-
-//メソッドの実行
-person.hello();
+obj[mySymble2]();
