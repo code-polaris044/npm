@@ -347,5 +347,19 @@ button.addEventListener("click", listUsers);
 // }
 
 // TypeError:メソッド実行時に期待された型ではなかった場合
-const num = 1;
-num.toUpperCase();
+// const num = 1;
+// num.toUpperCase();
+
+// 例外処理
+try {
+  nonExistingFunction();
+  console.log("nonExistingFunctionでの例外により、これは実行させません。");
+} catch (error) {
+  console.error("nonExistingFunctionは存在しないため、例外が発生しました");
+  console.error("エラータイプ:" + error.name);
+  console.error("エラーメッセージ:" + error.message);
+} finally {
+  console.log("後処理の記述が必要な場合はここに記述します。");
+}
+
+console.log("例外が発生しても後続のコードが実行されます。");
