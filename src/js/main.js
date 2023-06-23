@@ -211,16 +211,24 @@ button.addEventListener("click", listUsers);
 // person.hello();
 
 // シンボルの取得は、ブラケット記法のみ有効
-let mySymble1 = Symbol();
-let mySymble2 = Symbol();
+// let mySymble1 = Symbol();
+// let mySymble2 = Symbol();
 
-const obj = {
-  [mySymble1]: "値1",
-  [mySymble2]() {
-    console.log("hoge");
-  },
-};
+// const obj = {
+//   [mySymble1]: "値1",
+//   [mySymble2]() {
+//     console.log("hoge");
+//   },
+// };
 
-console.log(obj[mySymble1]);
+// console.log(obj[mySymble1]);
 
-obj[mySymble2]();
+// obj[mySymble2]();
+
+console.log(typeof "hello");
+console.log(typeof null);
+console.log(typeof {});
+console.log(typeof []);
+console.log(typeof Symbol());
+console.log(typeof Symbol);
+console.log(typeof undefined);
