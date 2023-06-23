@@ -256,4 +256,8 @@ button.addEventListener("click", listUsers);
 
 // 論理積
 // falsyな値がないため、左から右に判定が流れworldが返される
-console.log("hello" && "world");
+// console.log("hello" && "world");
+
+// 論理和
+// truthyな値が見つかった時点で、その論理和の結果を返し、演算子として処理が終了する
+console.log("hello" || "world");
