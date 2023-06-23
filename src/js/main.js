@@ -194,7 +194,8 @@ button.addEventListener("click", listUsers);
 
 //初期化時の宣言
 let person = {
-  hello: function () {
+  hello() {
+    //省略記法
     console.log("こんにちわ");
   },
 };
