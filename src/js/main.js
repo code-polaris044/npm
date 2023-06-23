@@ -140,6 +140,18 @@ window.addEventListener("load", listUsers);
 
 button.addEventListener("click", listUsers);
 
-const test = "test";
+// const test = "test";
 
-alert(`菅原\n${test}`);
+// alert(`菅原\n${test}`);
+
+let person = {
+  name: { first: "太郎", last: "独習" },
+  age: 18,
+};
+
+console.log(person.age);
+console.log(person.name.first);
+
+person.gender = "men";
+
+console.log(person);
