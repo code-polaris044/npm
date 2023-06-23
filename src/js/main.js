@@ -338,10 +338,14 @@ button.addEventListener("click", listUsers);
 // 変数未定義のエラー
 // console.log(jjljllj);
 
-// webpackを使うとSyntaxErrorではなく違うエラーが起きる
-if (false) {
-  console.log("このコードは実行されません");
-  elseif {
-    console.log("こちらが実行されます。");
-  }
-}
+// webpackを使うとSyntaxError(記法間違え)ではなく違うエラーが起きる
+// if (false) {
+//   console.log("このコードは実行されません");
+//   elseif {
+//     console.log("こちらが実行されます。");
+//   }
+// }
+
+// TypeError:メソッド実行時に期待された型ではなかった場合
+const num = 1;
+num.toUpperCase();
