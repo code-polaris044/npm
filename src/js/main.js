@@ -144,14 +144,35 @@ button.addEventListener("click", listUsers);
 
 // alert(`菅原\n${test}`);
 
+// let person = {
+//   name: { first: "太郎", last: "独習" },
+//   age: 18,
+// };
+
+// console.log(person.age);
+// console.log(person.name.first);
+
+// person.gender = "men";
+
+// console.log(person);
+
 let person = {
   name: { first: "太郎", last: "独習" },
   age: 18,
 };
 
-console.log(person.age);
-console.log(person.name.first);
+console.log(person["age"]);
+console.log(person["name"]["first"]);
 
-person.gender = "men";
+person["gender"] = "women";
 
 console.log(person);
+
+const members = {
+  member1: "太郎",
+  member2: "二郎",
+};
+
+const keyBase = "member";
+
+console.log(members[keyBase + "1"]);
