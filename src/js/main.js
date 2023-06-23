@@ -366,14 +366,27 @@ button.addEventListener("click", listUsers);
 
 // 明示的な例外スロー
 
-try {
-  const num = "3";
+// try {
+//   const num = "3";
 
-  if (typeof num !== "number") {
-    throw "numは数値型でなければなりません。";
-  }
+//   if (typeof num !== "number") {
+//     throw "numは数値型でなければなりません。";
+//   }
 
-  console.log(`${num}x5 = ${num * 5}`);
-} catch (error) {
-  console.error(error);
+//   console.log(`${num}x5 = ${num * 5}`);
+// } catch (error) {
+//   console.error(error);
+// }
+
+// while文
+
+let i = 0;
+
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+while (0) {
+  console.log("このコードは一度も実行されません。");
 }
