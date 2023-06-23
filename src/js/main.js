@@ -289,5 +289,11 @@ button.addEventListener("click", listUsers);
 
 // オプショナルチェイニング演算子
 //エラーで停止することがない
-const vtest = undefined?.prop;
-console.log(vtest);
+// const vtest = undefined?.prop;
+// console.log(vtest);
+
+const fruit = "りんご";
+
+if (fruit === "りんご") {
+  console.log("りんごが見つかりました。");
+}
