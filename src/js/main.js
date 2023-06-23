@@ -186,3 +186,6 @@ const members = {
 };
 
 console.log(members);
+
+delete members[keyBase + "1"];
+console.log(members.member1); //参照できなくなる
