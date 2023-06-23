@@ -309,10 +309,26 @@ button.addEventListener("click", listUsers);
 // }
 
 // falsyな値の中で、nullやundefinedを見分けるときに使うこともできる
-const truthy = "truthyな値です。";
+// const truthy = "truthyな値です。";
 
-if (truthy) {
-  console.log("条件式に渡された値はtruthyです");
-} else {
-  console.log("条件式に渡された値はfalsyです。");
+// if (truthy) {
+//   console.log("条件式に渡された値はtruthyです");
+// } else {
+//   console.log("条件式に渡された値はfalsyです。");
+// }
+
+const whileCase = "case3";
+
+switch (whileCase) {
+  case "case1":
+    console.log("case1節を実行しました");
+    break;
+
+  case "case2":
+    console.log("case2節を実行しました");
+    break;
+
+  default: {
+    console.log("default節を実行しました");
+  }
 }
