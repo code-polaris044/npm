@@ -271,5 +271,18 @@ button.addEventListener("click", listUsers);
 
 // 三項演算子
 //if文の省略記法として使われる
-1 === 1 ? console.log("真") : console.log("偽");
-1 === 2 ? console.log("真") : console.log("偽");
+// 1 === 1 ? console.log("真") : console.log("偽");
+// 1 === 2 ? console.log("真") : console.log("偽");
+
+// Null合体演算子
+
+let val = null;
+// null,undedinedは右オペランドを返す
+val = val ?? "初期値";
+console.log(`val+ ${val}`);
+
+let num = 0;
+
+num = num ?? 10;
+// null,undedined以外は左オペランドを返す
+console.log(`num+ ${num}`);
