@@ -250,6 +250,10 @@ button.addEventListener("click", listUsers);
 // console.log(10 < 2 * 6 - 2);
 
 // 自己演算子
-let a = 0;
-a += 10;
-console.log(a);
+// let a = 0;
+// a += 10;
+// console.log(a);
+
+// 論理積
+// falsyな値がないため、左から右に判定が流れworldが返される
+console.log("hello" && "world");
