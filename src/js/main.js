@@ -397,10 +397,26 @@ button.addEventListener("click", listUsers);
 //   console.log(i);
 // }
 
-for (;;) {
-  const rand = Math.random();
-  console.log(rand);
-  if (rand > 0.5)
-    //0.5より大きい場合のfor文を抜ける
-    break;
+// for (;;) {
+//   const rand = Math.random();
+//   console.log(rand);
+//   if (rand > 0.5)
+//     //0.5より大きい場合のfor文を抜ける
+//     break;
+// }
+
+// 配列
+
+let fruitArray = ["りんご", "メロン", "みかん"];
+
+console.log(fruitArray[0]);
+console.log(fruitArray.length);
+
+const numArray = [10, 20, 30];
+
+for (let index = 0; index < numArray.length; index++) {
+  //配列の値をコンソールに出力
+  numArray[index] = numArray[index] + 10;
 }
+
+console.log(numArray);
