@@ -300,10 +300,19 @@ button.addEventListener("click", listUsers);
 // }
 
 // if...else文 (else文は、falsyな場合にコードにコードを実行)
-const fruit = "リンゴ";
+// const fruit = "リンゴ";
 
-if (fruit === "りんご") {
-  console.log("りんごが見つかりました。");
+// if (fruit === "りんご") {
+//   console.log("りんごが見つかりました。");
+// } else {
+//   console.log("りんごじゃないが見つかりました。");
+// }
+
+// falsyな値の中で、nullやundefinedを見分けるときに使うこともできる
+const truthy = "truthyな値です。";
+
+if (truthy) {
+  console.log("条件式に渡された値はtruthyです");
 } else {
-  console.log("りんごじゃないが見つかりました。");
+  console.log("条件式に渡された値はfalsyです。");
 }
