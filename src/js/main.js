@@ -335,4 +335,13 @@ button.addEventListener("click", listUsers);
 // }
 
 // 例外処理
-console.log(jjljllj);
+// 変数未定義のエラー
+// console.log(jjljllj);
+
+// webpackを使うとSyntaxErrorではなく違うエラーが起きる
+if (false) {
+  console.log("このコードは実行されません");
+  elseif {
+    console.log("こちらが実行されます。");
+  }
+}
