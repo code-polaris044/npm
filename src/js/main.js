@@ -225,10 +225,19 @@ button.addEventListener("click", listUsers);
 
 // obj[mySymble2]();
 
-console.log(typeof "hello");
-console.log(typeof null);
-console.log(typeof {});
-console.log(typeof []);
-console.log(typeof Symbol());
-console.log(typeof Symbol);
-console.log(typeof undefined);
+// console.log(typeof "hello");
+// console.log(typeof null);
+// console.log(typeof {});
+// console.log(typeof []);
+// console.log(typeof Symbol());
+// console.log(typeof Symbol);
+// console.log(typeof undefined);
+
+// 明示的な型変換
+
+console.log(Number("1"));
+console.log(Number("HEllo"));
+console.log(Number("0"));
+console.log(Number(true));
+console.log(String(true));
+console.log(typeof String(1));
