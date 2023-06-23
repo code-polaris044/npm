@@ -407,16 +407,27 @@ button.addEventListener("click", listUsers);
 
 // 配列
 
-let fruitArray = ["りんご", "メロン", "みかん"];
+// let fruitArray = ["りんご", "メロン", "みかん"];
 
-console.log(fruitArray[0]);
-console.log(fruitArray.length);
+// console.log(fruitArray[0]);
+// console.log(fruitArray.length);
 
-const numArray = [10, 20, 30];
+// const numArray = [10, 20, 30];
 
-for (let index = 0; index < numArray.length; index++) {
-  //配列の値をコンソールに出力
-  numArray[index] = numArray[index] + 10;
+// for (let index = 0; index < numArray.length; index++) {
+//   //配列の値をコンソールに出力
+//   numArray[index] = numArray[index] + 10;
+// }
+
+// console.log(numArray);
+
+// for...in文
+const fruits = {
+  apple: "りんご",
+  banana: "バナナ",
+  orange: "オレンジ",
+};
+
+for (const key in fruits) {
+  console.log(`キー:[${key}] 値:[${fruits[key]}]`);
 }
-
-console.log(numArray);
