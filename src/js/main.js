@@ -178,14 +178,33 @@ button.addEventListener("click", listUsers);
 // console.log(members[keyBase + "1"]);
 
 // es6からのブラケット記法
-const keyBase = "member";
+// const keyBase = "member";
 
-const members = {
-  [keyBase + "1"]: "太郎",
-  [keyBase + "2"]: "二郎",
+// const members = {
+//   [keyBase + "1"]: "太郎",
+//   [keyBase + "2"]: "二郎",
+// };
+
+// console.log(members);
+
+// delete members[keyBase + "1"];
+
+// console.log(members.member1);
+//参照できなくなる
+
+//初期化時の宣言
+let person = {
+  hello: function () {
+    console.log("こんにちわ");
+  },
 };
 
-console.log(members);
+//既存オブジェクトにメソッドを追加
+person.sorry = function () {
+  console.log("ごめん");
+};
 
-delete members[keyBase + "1"];
-console.log(members.member1); //参照できなくなる
+person.sorry();
+
+//メソッドの実行
+person.hello();
