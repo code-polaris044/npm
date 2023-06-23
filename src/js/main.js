@@ -261,3 +261,10 @@ button.addEventListener("click", listUsers);
 // 論理和
 // truthyな値が見つかった時点で、その論理和の結果を返し、演算子として処理が終了する
 console.log("hello" || "world");
+
+// カンマ演算子
+// それぞれの演算対象を左から右に評価し、最後のオペラントの値を返す
+let a = 0,
+  b = 1;
+
+console.log(a, b);
