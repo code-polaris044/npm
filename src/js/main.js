@@ -351,15 +351,29 @@ button.addEventListener("click", listUsers);
 // num.toUpperCase();
 
 // 例外処理
-try {
-  nonExistingFunction();
-  console.log("nonExistingFunctionでの例外により、これは実行させません。");
-} catch (error) {
-  console.error("nonExistingFunctionは存在しないため、例外が発生しました");
-  console.error("エラータイプ:" + error.name);
-  console.error("エラーメッセージ:" + error.message);
-} finally {
-  console.log("後処理の記述が必要な場合はここに記述します。");
-}
+// try {
+//   nonExistingFunction();
+//   console.log("nonExistingFunctionでの例外により、これは実行させません。");
+// } catch (error) {
+//   console.error("nonExistingFunctionは存在しないため、例外が発生しました");
+//   console.error("エラータイプ:" + error.name);
+//   console.error("エラーメッセージ:" + error.message);
+// } finally {
+//   console.log("後処理の記述が必要な場合はここに記述します。");
+// }
 
-console.log("例外が発生しても後続のコードが実行されます。");
+// console.log("例外が発生しても後続のコードが実行されます。");
+
+// 明示的な例外スロー
+
+try {
+  const num = "3";
+
+  if (typeof num !== "number") {
+    throw "numは数値型でなければなりません。";
+  }
+
+  console.log(`${num}x5 = ${num * 5}`);
+} catch (error) {
+  console.error(error);
+}
