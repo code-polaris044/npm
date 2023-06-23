@@ -156,23 +156,33 @@ button.addEventListener("click", listUsers);
 
 // console.log(person);
 
-let person = {
-  name: { first: "太郎", last: "独習" },
-  age: 18,
-};
+// let person = {
+//   name: { first: "太郎", last: "独習" },
+//   age: 18,
+// };
 
-console.log(person["age"]);
-console.log(person["name"]["first"]);
+// console.log(person["age"]);
+// console.log(person["name"]["first"]);
 
-person["gender"] = "women";
+// person["gender"] = "women";
 
-console.log(person);
+// console.log(person);
 
-const members = {
-  member1: "太郎",
-  member2: "二郎",
-};
+// const members = {
+//   member1: "太郎",
+//   member2: "二郎",
+// };
 
+// const keyBase = "member";
+
+// console.log(members[keyBase + "1"]);
+
+// es6からのブラケット記法
 const keyBase = "member";
 
-console.log(members[keyBase + "1"]);
+const members = {
+  [keyBase + "1"]: "太郎",
+  [keyBase + "2"]: "二郎",
+};
+
+console.log(members);
