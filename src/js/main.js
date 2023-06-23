@@ -244,7 +244,12 @@ button.addEventListener("click", listUsers);
 
 // 暗黙的な型変換
 
-console.log(1 + "1");
+// console.log(1 + "1");
 
 // 関係演算子
-console.log(10 < 2 * 6 - 2);
+// console.log(10 < 2 * 6 - 2);
+
+// 自己演算子
+let a = 0;
+a += 10;
+console.log(a);
