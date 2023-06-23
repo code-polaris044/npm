@@ -380,13 +380,27 @@ button.addEventListener("click", listUsers);
 
 // while文
 
-let i = 0;
+// let i = 0;
 
-while (i < 5) {
-  console.log(i);
-  i++;
-}
+// while (i < 5) {
+//   console.log(i);
+//   i++;
+// }
 
-while (0) {
-  console.log("このコードは一度も実行されません。");
+// while (0) {
+//   console.log("このコードは一度も実行されません。");
+// }
+
+// for文
+
+// for (let i = 0; i < 5; i++) {
+//   console.log(i);
+// }
+
+for (;;) {
+  const rand = Math.random();
+  console.log(rand);
+  if (rand > 0.5)
+    //0.5より大きい場合のfor文を抜ける
+    break;
 }
