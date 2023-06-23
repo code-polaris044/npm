@@ -292,8 +292,18 @@ button.addEventListener("click", listUsers);
 // const vtest = undefined?.prop;
 // console.log(vtest);
 
-const fruit = "りんご";
+// if文 (条件式がtruthyの場合に実行される)
+// const fruit = "りんご";
+
+// if (fruit === "りんご") {
+//   console.log("りんごが見つかりました。");
+// }
+
+// if...else文 (else文は、falsyな場合にコードにコードを実行)
+const fruit = "リンゴ";
 
 if (fruit === "りんご") {
   console.log("りんごが見つかりました。");
+} else {
+  console.log("りんごじゃないが見つかりました。");
 }
