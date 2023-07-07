@@ -58,14 +58,3 @@ body {
 .splide__track {
     max-height: 200px;
 }
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../images/bg-sample.jpg");
-    /* Fallback */
-    background-image: image-set(url("../images/bg-sample.avif") type("image/avif"),
-            url("../images/bg-sample.jpg") type("image/jpeg"));
-    background-size: cover;
-    background-position: left top;
-}
