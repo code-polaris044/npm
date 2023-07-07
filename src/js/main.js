@@ -431,12 +431,3 @@ button.addEventListener("click", listUsers);
 // for (const key in fruits) {
 //   console.log(`キー:[${key}] 値:[${fruits[key]}]`);
 // }
-import Splide from "@splidejs/splide";
-import "@splidejs/splide/dist/css/splide.min.css";
-document.addEventListener("DOMContentLoaded", () => {
-  new Splide(".splide", {
-    type: "loop",
-    direction: "ttb",
-    height: 540,
-  }).mount();
-});
