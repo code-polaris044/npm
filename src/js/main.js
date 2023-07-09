@@ -111,35 +111,6 @@
 
 // callApi();
 
-const button = document.getElementById('addBtn');
-const lists = document.getElementById('lists');
-
-async function getUsers() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/users/');
-  const users = await res.json();
-  return users;
-}
-
-function addList(user) {
-  if (user.id <= 5) {
-    const list = document.createElement('li');
-    list.innerText = user.name;
-    lists.appendChild(list);
-    console.log(list);
-  }
-}
-
-async function listUsers() {
-  // Dom操作を待たせる
-  const users = await getUsers();
-
-  users.forEach(addList);
-}
-
-window.addEventListener('load', listUsers);
-
-button.addEventListener('click', listUsers);
-
 // const test = "test";
 
 // alert(`菅原\n${test}`);
@@ -431,3 +402,38 @@ button.addEventListener('click', listUsers);
 // for (const key in fruits) {
 //   console.log(`キー:[${key}] 値:[${fruits[key]}]`);
 // }
+
+import '@splidejs/splide/css/skyblue';
+
+import Splide from '@splidejs/splide';
+
+new Splide( '.splide' ).mount();
+
+const button = document.getElementById('addBtn');
+const lists = document.getElementById('lists');
+
+async function getUsers() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/users/');
+  const users = await res.json();
+  return users;
+}
+
+function addList(user) {
+  if (user.id <= 5) {
+    const list = document.createElement('li');
+    list.innerText = user.name;
+    lists.appendChild(list);
+    console.log(list);
+  }
+}
+
+async function listUsers() {
+  // Dom操作を待たせる
+  const users = await getUsers();
+
+  users.forEach(addList);
+}
+
+window.addEventListener('load', listUsers);
+
+button.addEventListener('click', listUsers);
