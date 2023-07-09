@@ -1,60 +1,60 @@
-@use "sass:math";
+@use 'sass:math';
 
 $IMAGE: '../img/';
 $ratio: math.div(3, 2);
 
 .title {
-    color: palegoldenrod;
-    text-align: center;
-    line-height: 1.6;
+  color: palegoldenrod;
+  text-align: center;
+  line-height: 1.6;
 }
 
 #music {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .img__f {
-    width: min(100% - 80px, 600px);
-    height: auto;
-    background: url("#{$IMAGE}a.png") no-repeat center center/cover;
-    aspect-ratio: $ratio;
-    margin: 0 auto 40px;
+  width: min(100% - 80px, 600px);
+  height: auto;
+  background: url('#{$IMAGE}a.png') no-repeat center center/cover;
+  aspect-ratio: $ratio;
+  margin: 0 auto 40px;
 }
 
 .img__s {
-    width: min(100% - 80px, 600px);
-    height: auto;
-    background: url("#{$IMAGE}b.jpg") no-repeat center center/cover;
-    aspect-ratio: $ratio;
-    margin: 0 auto 40px
+  width: min(100% - 80px, 600px);
+  height: auto;
+  background: url('#{$IMAGE}b.jpg') no-repeat center center/cover;
+  aspect-ratio: $ratio;
+  margin: 0 auto 40px;
 }
 
 #lists {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 #addBtn {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .splide-outer {
-    max-width: 960px;
-    margin: auto;
+  max-width: 960px;
+  margin: auto;
 }
 
 .splide__slide img {
-    width: 100%;
+  width: 100%;
 }
 
 .splide__track {
-    max-height: 200px;
+  max-height: 200px;
 }

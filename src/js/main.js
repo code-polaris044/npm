@@ -111,18 +111,18 @@
 
 // callApi();
 
-const button = document.getElementById("addBtn");
-const lists = document.getElementById("lists");
+const button = document.getElementById('addBtn');
+const lists = document.getElementById('lists');
 
 async function getUsers() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users/");
+  const res = await fetch('https://jsonplaceholder.typicode.com/users/');
   const users = await res.json();
   return users;
 }
 
 function addList(user) {
   if (user.id <= 5) {
-    const list = document.createElement("li");
+    const list = document.createElement('li');
     list.innerText = user.name;
     lists.appendChild(list);
     console.log(list);
@@ -136,9 +136,9 @@ async function listUsers() {
   users.forEach(addList);
 }
 
-window.addEventListener("load", listUsers);
+window.addEventListener('load', listUsers);
 
-button.addEventListener("click", listUsers);
+button.addEventListener('click', listUsers);
 
 // const test = "test";
 
@@ -190,9 +190,9 @@ button.addEventListener("click", listUsers);
 // delete members[keyBase + "1"];
 
 // console.log(members.member1);
-//参照できなくなる
+// 参照できなくなる
 
-//初期化時の宣言
+// 初期化時の宣言
 // let person = {
 //   hello() {
 //     //省略記法
@@ -200,14 +200,14 @@ button.addEventListener("click", listUsers);
 //   },
 // };
 
-//既存オブジェクトにメソッドを追加
+// 既存オブジェクトにメソッドを追加
 // person.sorry = function () {
 //   console.log("ごめん");
 // };
 
 // person.sorry();
 
-//メソッドの実行
+// メソッドの実行
 // person.hello();
 
 // シンボルの取得は、ブラケット記法のみ有効
@@ -270,7 +270,7 @@ button.addEventListener("click", listUsers);
 // console.log(a, b);
 
 // 三項演算子
-//if文の省略記法として使われる
+// if文の省略記法として使われる
 // 1 === 1 ? console.log("真") : console.log("偽");
 // 1 === 2 ? console.log("真") : console.log("偽");
 
@@ -288,7 +288,7 @@ button.addEventListener("click", listUsers);
 // conso
 
 // オプショナルチェイニング演算子
-//エラーで停止することがない
+// エラーで停止することがない
 // const vtest = undefined?.prop;
 // console.log(vtest);
 
