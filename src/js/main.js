@@ -407,7 +407,7 @@ import '@splidejs/splide/css/skyblue';
 
 import Splide from '@splidejs/splide';
 
-new Splide( '.splide' ).mount();
+new Splide('.splide').mount();
 
 const button = document.getElementById('addBtn');
 const lists = document.getElementById('lists');
@@ -437,3 +437,57 @@ async function listUsers() {
 window.addEventListener('load', listUsers);
 
 button.addEventListener('click', listUsers);
+
+// const arry = [10, 20, 30, 40];
+// let sum = 0;
+
+// for (let i = 0; i < arry.length; i++) {
+//   const value = arry[i];
+//   sum += value;
+
+//   console.log(sum);
+// }
+
+// console.log(sum);
+
+// const fruits = { apple: 'りんご', banana: 'バナナ', orange: 'オレンジ' };
+
+// for (const key in fruits) {
+//   console.log(`キー[${key}] 値:[${fruits[key]}]`);
+// }
+
+// const obj = {
+//   prop1: 10,
+//   prop2: 20,
+//   skip: 20,
+//   prop3: 23,
+//   prop4: 47,
+// };
+
+// let test = 0;
+
+// for (const a in obj) {
+//   if (a !== 'skip') {
+//     test += obj[a];
+//     // console.log(`キー[${sum}] 値:[${obj[sum]}]`);
+//   }
+// }
+// console.log(test);
+
+// const arry = ['リンゴ', 'バナナ'];
+
+// for (const key in arry) {
+//   console.log(key);
+// }
+
+// console.log(arry);
+
+const obj = { prop1: 'これは列挙可能プロパティです。' };
+Reflect.defineProperty(obj, 'prop2', {
+  value: 'これは列挙可能なプロパティではありません。',
+  enumerable: false,
+});
+
+for (const key in obj) {
+  console.log(key, obj[key]);
+}
