@@ -482,12 +482,41 @@ button.addEventListener('click', listUsers);
 
 // console.log(arry);
 
-const obj = { prop1: 'これは列挙可能プロパティです。' };
-Reflect.defineProperty(obj, 'prop2', {
-  value: 'これは列挙可能なプロパティではありません。',
-  enumerable: false,
-});
+// const obj = { prop1: 'これは列挙可能プロパティです。' };
+// Reflect.defineProperty(obj, 'prop2', {
+//   value: 'これは列挙可能なプロパティではありません。',
+//   enumerable: false,
+// });
 
-for (const key in obj) {
-  console.log(key, obj[key]);
+// for (const key in obj) {
+//   console.log(key, obj[key]);
+// }
+
+// const fruits = ['りんご', 'バナナ', 'オレンジ'];
+// for (const value of fruits) {
+//   console.log(value);
+// }
+
+// const map = new Map();
+// map.set('apple', 'りんご');
+// map.set('banana', 'バナナ');
+
+// for (const row of map) {
+//   console.log(row[0], row[1]);
+// }
+
+// for (const [key, value] of map) {
+//   console.log(key, value);
+//   console.log(value);
+// }
+
+const arry = [10, '文字列', 20, true, 23, 47];
+let sum = 0;
+
+for (const value of arry) {
+  if (typeof value === 'number') {
+    sum += value;
+  }
 }
+
+console.log(sum);
